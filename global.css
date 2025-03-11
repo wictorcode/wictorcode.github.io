@@ -105,10 +105,38 @@ SECTION HOME
 
 .section-title {
     text-decoration: none;
-    width: calc(100% - padding);
+    width: calc(90% - padding);
     background-color: rgba(68, 0, 111, 0.4);
     padding: 10px;
     margin-bottom: 20px;
-    border-radius: 1rem;
+    border-radius: 500px;
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.451);
+    flex: 0 0 90%;
+}
+
+
+#section-langages {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    width:max-content;
+    max-width: 20%;
+    height: fit-content;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }

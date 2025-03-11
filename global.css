@@ -12,7 +12,7 @@ body {
     height: 100dvh;
 
     background-image: url("public/wave_pattern.png");
-    background-size: 400px;
+    background-size: 200px;
     background-blend-mode: multiply;
     background-position: center;
     background-position-x: 100px;
@@ -22,6 +22,8 @@ body {
     align-items: center;
 
     overflow: hidden;
+
+    box-shadow: inset 0 0 50px 0px rgba(0, 0, 0, 0.4);
 }
 
 #left-info {
@@ -73,6 +75,24 @@ li {
     text-decoration: dashed;
 }
 
+ul {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+li > ul {
+    background: none;
+    border-radius: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+}
+
 #left-content-area {
     display: flex;
     justify-content: center;
@@ -107,6 +127,7 @@ SECTION HOME
     backdrop-filter: blur(3px);
     border-radius: 0.75rem;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+    padding-inline: 20px;
 }
 
 .right-side-section {

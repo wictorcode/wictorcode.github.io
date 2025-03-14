@@ -27,7 +27,7 @@ body {
 
     /* Center all that shit */
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -60,13 +60,13 @@ HEADER/WELCOME SECTION
     align-items: center;
     flex-direction: column;
     width: 100%;
-    box-shadow:  0px 10px 30px 0px rgba(15, 15, 15, 0.662);
+    box-shadow:  0px 0px 10px 5px rgba(15, 15, 15, 0.662);
     background-color: #E70012;
-    /* opacity: 1;
+    opacity: 1;
     background-image:  linear-gradient(135deg, #d50113 25%, transparent 25%), linear-gradient(225deg, #d50113 25%, transparent 25%), linear-gradient(45deg, #d50113 25%, transparent 25%), linear-gradient(315deg, #d50113 25%, #E70012 25%);
     background-position:  10px 0, 10px 0, 0 0, 0 0;
     background-size: 20px 20px;
-    background-repeat: repeat; */
+    background-repeat: repeat;
 
     min-height: fit-content;
     max-height: max-content;
@@ -134,19 +134,172 @@ HEADER/WELCOME SECTION
     background: transparent;
     background-image: url("public/tooth.png");
     background-repeat: repeat-x;
+    background-size: 5%;
     z-index: 2;
-    margin-bottom: -64px;
+    margin-bottom: -256px;
 }
-
-
 
 
 #app-projets {
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     z-index: 1;
     color: black;
     background-color: #ffffff;
     background: repeating-linear-gradient(-45deg, #f0f0f0, #f0f0f0 5px, #ffffff 2px, #ffffff 10px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projets-title {
+    /* margin-top: 220px; */
+    /* background-color: rgba(0, 0, 0, 0.568); */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+#app-projets > p {
+    margin: 0;
+    text-align: center;
+    margin-inline: 1rem;
+}
+
+#project-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+
+}
+
+.project-card {
+    background-color: #171717;
+    color: white;
+    height: 120px;
+    padding: 2%;
+
+    text-align: left;
+    
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+
+    background-color: #171717;
+    opacity: 1;
+    background-image:  repeating-linear-gradient(45deg, #272727 25%, transparent 25%, transparent 75%, #272727 75%, #272727), repeating-linear-gradient(45deg, #272727 25%, #171717 25%, #171717 75%, #272727 75%, #272727);
+    background-position: 0 0, 8px 8px;
+    background-size: 16px 16px;
+    
+    max-width: 20%;
+
+    border: solid #171717 8px;
+
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-card-title {
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+@keyframes buttonScale {
+    0% {
+        transform: scale(1.1);
+    }
+
+    30% {
+        transform: scale(1.25);
+    }
+
+    60% {
+        transform: scale(1.15);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.project-card-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: "ShinGo";
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    animation: buttonScale 330ms ease-in-out;
+}
+
+.project-card-button:hover {
+    transform: scale(1.15);
+}
+
+@media only screen and (max-width: 600px) {
+    .project-card {
+        max-width: 80%;
+        height: 256px;
+    }
+}
+
+
+
+.img-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 0.8rem;
+    outline: solid 4px black;
+    box-shadow: 0px 0px 0px 8px rgb(255, 255, 255);
+}
+
+
+#project-details-modal {
+    width: 90%;
+    height: 80%;
+    z-index: 10;
+    position: fixed;
+    visibility: hidden;
+
+    background-color: #31163F;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #31163F 20%, #31163F 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #31163F 20%, #31163F 80%, transparent 80%, transparent) 27.5px 27.5px, linear-gradient(#3E2B47 2.2px, transparent 2.2px) 0 -1.1px, linear-gradient(90deg, #3E2B47 2.2px, #31163F 2.2px) -1.1px 0;
+    background-size: 55px 55px, 55px 55px, 27.5px 27.5px, 27.5px 27.5px;
+
+    border-radius: 0.6rem;
+    outline: solid 5px rgb(0, 0, 0);
+
+    box-shadow: 0px 0px 0px 10px rgb(255, 255, 255);
+    overflow-y: scroll;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-details-modal-content {
+    width: 95%;
+    height: 100%;
 }

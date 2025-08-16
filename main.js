@@ -116,7 +116,7 @@ function createSpan() {
     for (let i = 0; i < maxCharsPerSpan; i++) {
         content += getRandomCharacterFromPool();
     }
-    newSpanLine.textContent = content; // Use textContent, not innerHTML
+    newSpanLine.textContent = content;
     
     return newSpanLine;
 }
@@ -133,6 +133,27 @@ function generateBackground() {
     }
     $BACKGROUND.appendChild(fragment)
 }
+
+
+function regenWave() {
+    const lines = Array.from($BACKGROUND.childNodes);
+    let currentLine = 0;
+
+    setInterval(() => {
+
+        const elt = lines[currentLine];
+        if (elt) {
+            let content = '';
+            for (let i = 0; i < maxCharsPerSpan; i++) {
+                content += getRandomCharacterFromPool();
+            }
+            elt.textContent = content;
+        }
+        
+        currentLine = (currentLine + 1) % lines.length;
+    }, 66);
+}
+
 
 
 //==================================================================================================================//
@@ -187,6 +208,7 @@ window.addEventListener("resize", () => {
     amountOfSpans = getLinesToFillViewport()
     flushBackground()
     generateBackground()
+    regenWave()
 })
 
 
@@ -248,4 +270,7 @@ maxCharsPerSpan = getCharsToFillViewport() + 1
 amountOfSpans = getLinesToFillViewport() - 1
 flushBackground()
 generateBackground()
-generateSkills()
+
+regenWave()
+
+//generateSkills()

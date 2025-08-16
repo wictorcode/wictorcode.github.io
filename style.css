@@ -74,6 +74,11 @@ body {
     transform: scale(0.96);
 }
 
+.buttonLink {
+    width: 30%;
+    text-align: center;
+}
+
 #page-content {
     position: relative;
     z-index: 10; /* above background */
@@ -95,15 +100,6 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
-
-#contentBlock-aboutMe { 
-    grid-column: span 3 / span 3;
-}
-
-
-
-
-
 
 
 .blue-outline {
@@ -225,22 +221,22 @@ h2 {
     color: rgb(0, 255, 42);
 }
 
+#osakaAscii {
+    white-space: pre;
+    font-size: min(2vw, 2vh);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    text-align: center;
+    transform: scale(0.3);
+}
+
+
 /*********************************************/
 /* MEDIA QUERIES */
 /*********************************************/
 
-@media only screen and (max-width: 600px) {
-  #content-titleName {
-    width: 85%;
-  }
-
-  .skill-list  {
-    width: 90%;
-  }
-}
-
-
-.rainbow_text_animated {
+  .rainbow_text_animated {
     background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -257,4 +253,26 @@ h2 {
     50% {
         background-position: 100% 0;
     }
+}
+
+@media only screen and (max-width: 600px) {
+  #content-titleName {
+    width: 85%;
+  }
+
+  .skill-list  {
+    width: 90%;
+  }
+
+  #page-content-grid {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #osakaAscii {
+    transform: scale(0.6);
+  }
 }

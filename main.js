@@ -260,6 +260,24 @@ function handleInteraction(e) {
 }
 
 
+function scaleAsciiArt() {
+            const asciiElements = document.querySelectorAll('.ascii-transform');
+            
+            asciiElements.forEach(ascii => {
+                const container = ascii.closest('.demo-container');
+                const containerWidth = container.clientWidth - 40; // Account for padding
+                const asciiWidth = ascii.scrollWidth;
+                const scale = Math.min(1, containerWidth / asciiWidth);
+                
+                ascii.style.transform = `scale(${scale})`;
+                ascii.style.transformOrigin = 'top left';
+                
+                // Adjust container height to accommodate scaled content
+                const scaledHeight = ascii.scrollHeight * scale;
+                ascii.style.marginBottom = `${scaledHeight - ascii.scrollHeight}px`;
+            });
+        }
+
 
 
 //==================================================================================================================//
@@ -270,7 +288,7 @@ maxCharsPerSpan = getCharsToFillViewport() + 1
 amountOfSpans = getLinesToFillViewport() - 1
 flushBackground()
 generateBackground()
-
 regenWave()
+scaleAsciiArt()
 
 //generateSkills()

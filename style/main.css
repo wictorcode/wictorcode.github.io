@@ -3,6 +3,7 @@
 :root {
     --divy-orange: #ff9205;
     --accent-blue: #4a9eff;
+    --text-secondary: #cccccc;
 }
 
 a {
@@ -122,4 +123,22 @@ ul, li {
 
 .experienceDate {
     color: var(--divy-orange);
+}
+
+.hero {
+    margin-top: 2em;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--divy-orange);
+    margin: 0;
+    text-shadow: 0 0 10px var(--divy-orange);
+}
+
+.hero > h2 {
+    font-weight: 100;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin: 0.5em 0 2em 0;
 }

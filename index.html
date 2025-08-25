@@ -1,138 +1,140 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Victor VAUTRIN</title>
-  <script type="module" src="main.js" defer></script>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor VAUTRIN</title>
+    <script src="source/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="style/main.css">
 </head>
-<body class="bg-theme-dark">
+<body>
+    <!-- Ne pas toucher, c'est le background binaire -->
+    <pre id="internal-background" class="bg-theme-dark">
+    </pre> 
 
-  <!-- BACKGROUND  -->
-  <pre id="internal-background" class="bg-theme-dark"></pre>
+    <div id="page-content">
+        <h1>Victor Vautrin</h1>
+        <h2>Étudiant & Développeur Informatique</h2>
 
-  <!-- CONTENT -->
-  <div id="page-content">
-  <div id="page-content-grid">
-<!--==================================================================================================-->
+        <section class="genericContainer">
+            <h3 class="sectionTitle">C:\A_Propos</h3>
+            <p>Je me nomme Victor Vautrin. Je suis un développeur passioné, spécialisé dans la réalisation d'applications.</p>
+            <p>Je vous invite à me découvrir à travers ce site.</p>
+        </section>
 
-    <!-- INTRODUCTION INTRODUCTION INTRODUCTION INTRODUCTION INTRODUCTION -->
-    <div style="
-      grid-column: span 3 / span 3;
-      max-width: 100%;" 
-    id="content-titleName" class="base-container backdrop top-outset blue-outline margin-l"
-    >
-      <h2>Salut la team</h2>
-      <p>
-        Je m'appelle <span class="rainbow_text_animated">Victor Vautrin</span> et je code jsp frere :(
-      </p>
+        <section class="genericContainer">
+            <h3 class="sectionTitle">D:\C0mptences</h3>
 
-      <div style="
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-      ">
-        <a class="base-container buttonLink clickable white-outline margin-s" href="mailto:vautrinvic@gmail.com">Email</a>
-        <a class="base-container buttonLink clickable white-outline margin-s" href="https://www.linkedin.com/in/victor-vautrin-b757b0222/">LinkedIn</a>
-        <a class="base-container buttonLink clickable white-outline margin-s">Yes</a>
-      </div>
+            <div style="
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 8px;"
+            >
+
+                <div class="skillBlock">
+                    <strong>Frontend</strong>
+                    <div class="skillItem">
+                        <ul>
+                            <li>Vue</li>
+                            <li>Angular</li>
+                            <li>HTML/CSS/JS</li>
+                            <li>Typescript</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="skillBlock">
+                    <strong>Backend</strong>
+                    <div class="skillItem">
+                        <ul>
+                            <li>PHP</li>
+                            <li>Symfony</li>
+                            <li>NestJS</li>
+                            <li>Springboot</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skillBlock">
+                    <strong>Base de Données</strong>
+                    <div class="skillItem">
+                        <ul>
+                            <li>SQL</li>
+                            <li>SQLite / MySQL / MariaDB</li>
+                            <li>MongoDB</li>
+                            <li>Neo4J</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skillBlock">
+                    <strong>Logiciels</strong>
+                    <div class="skillItem">
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Git</li>
+                            <li>Netbeans</li>
+                            <li>Divalto Weavy (CRM)</li>
+                            <li>Suite Office</li>
+                            <li>Android Studio</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skillBlock">
+                    <strong>Autres</strong>
+                    <div class="skillItem">
+                        <ul>
+                            <li>C/C++</li>
+                            <li>Python</li>
+                            <li>Lua</li>
+                            <li>Kotlin</li>
+                            <li>Java Swing</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="genericContainer">
+            <h3 class="sectionTitle">E:\projets_et_experiences</h3>
+
+            <div class="experienceItem">
+                <div class="experienceTitle">Stage @ <a href="https://www.divy-si.fr/">Divy</a></div>
+                <div class="experienceDate">Juin 2025 - Septembre 2025</div>
+                <p>Conception et développement de solutions CRM adaptées aux besoins des clients, selon la méthodologie agile, en utilisant la suite d’outils Divalto.</p>
+            </div>
+
+            <div class="experienceItem">
+                <div class="experienceTitle">Projet Universitaire - ERP</div>
+                <div class="experienceDate">Septembre 2024 - Juin 2025</div>
+                <p>Au premier semestre de 3ème année de BUT, notre groupe de 20 étudiants a dû s'organiser, concevoir et développer un ERP à partir d'un cahier des charges fourni par les enseignants.</p>
+                <p>Technologies utilisées : Angular, NestJS, MySQL, Tailwind.</p>
+                <p>Au second semestre, nous avons échangé notre ERP avec celui d’un autre groupe. Nous devions le reprendre, l’adapter en fonction des retours, et nous approprier une nouvelle base de code.</p>
+                <p>Technologies utilisées : Angular, PrimeNG, Java Spring Boot.</p>
+            </div>
+        </section>
+
+
+        <section class="genericContainer">
+            <h3 class="sectionTitle">F:\ormations</h3>
+
+            <div class="experienceItem">
+                <div class="experienceTitle">Epitech, Lyon</div>
+                <div class="experienceDate">2025-2027</div>
+                <p>À venir...</p>
+            </div>
+
+            <div class="experienceItem">
+                <div class="experienceTitle">IUT Lyon 1, Villeurbanne</div>
+                <div class="experienceDate">2022-2025</div>
+                <p>BUT Informatique, avec une spécialisation en réalisation d'applications</p>
+            </div>
+
+        </section>
     </div>
-
-    <!-- SATA ANDAGI SATA ANDAGI SATA ANDAGI SATA ANDAGI SATA ANDAGI -->
-
-    <div style="
-      grid-column: span 2 / span 2;
-      grid-row: span 2 / span 2;
-      grid-column-start: 4;
-
-      width:100%; height:100%; display:flex; justify-content:center; align-items:center;
-    "
-    class="base-container top-outset blue-outline margin-l backdrop"
-    >
-    <div
-    class="BnW_text_animated"
-      id="osakaAscii"
-    >                                                               
-                                   π≈÷-++++++++++++++++-=√                                          
-                              √×++++++++++++++++++++++++++++++=                                     
-                           +++++++++++++++++++++++++++++++++++++++÷                                 
-                        +++++++++++++++++++++++++++++++++++++++++++++∞                              
-                     √+≈ =+++  ++++++==+++≠++++++++++++++++++++++++++-++                            
-                   √+≠            √         +≠    √√ππ+π  √π √÷         ++                          
-                  +÷  ≠     ÷≠ ÷++=×=++ π√++-+- ∞≈+++≈       -≈   ∞++= ++++×                        
-                ∞+ ≠+++++++++++++++++++++++÷ ×+++++++++√ +++++++× ×++++++++++                       
-               -+++++++++++++++++++++++++++   ++++++++++++++++++++++++++++++++√                     
-              ++++++++++++++++++++++++++++    ×++++++√+++++++++++++++++++++++++                     
-             +++++++++++++++++++++×++++++√     ++++++π≠+++++++++++++++++++++++++                    
-            ∞+++++++++++++++++++++ +++++≠       ++++++ ∞+++++++++++++++++++++++++                   
-            +++++++++++++++≠+++++  +++++        √+++++  π++++++√+++++++++++++++++∞                  
-           ≠+++++++++++++++√+++++++++++          ∞++++×÷÷++++++√≈+++++++++++++++++                  
-           +++++++++++++++≈ ++++   +++-           =+++=    +++++++++++++++++++++++∞                 
-          √++++++++++++++≈  +++    +++              +++     ++++  +++++++++++++++++                 
-          =+++++++++-++++   +++++++++∞               =+÷π∞√  -++   ++++++++++++++++                 
-          +++++++++÷≠+++ ≈+++++++++++                +++++++++++√  √+++++++++++++++                 
-          +++++++++≈ ++++≈π+++++++++≠                ≈++++++++++++≠ +++++++++++++++                 
-          +++++++++π +++  ×++++++++++                ++++++++++++ =+√++=+++++++++++                 
-         ∞+++++++++  ÷×   +++++++++++                ++++++++++++   +++∞+++++++++++√                
-         =+++++++++ ∞+    +++++++++++√               ++++++++++++    +  +++++++++++√                
-         -+++++++++ +=    +++++++++++π               ++++++++++++    +√ +++++++++++≠                
-         ++++++++++ ==    +++++++++++                ++++++++++++   ≈+  +++++++++++≠                
-         ++++++++++  +    -≈  ÷+++++×                ≠+   +++++++   +÷  +++++++++++=                
-         +++++++++-          π++++++                  =   ++++++    ∞   +++++++++++≠                
-         +++++++++-         ÷+++++=                    ++++++++π        +++++++++++≈                
-         +++++++++-                                      π√∞π          π+++++++++++∞                
-         +++++++++×                                                    ≠+++++++++++π                
-         +++++++++×                                                    ×+++++++++++                 
-         ++++++++++                                                    ++++++++++++                 
-         +++++++++++                                                  =++++++++++++                 
-         ++++++++++++                     √∞√∞≈≈π                    ++++++++++++++                 
-         ++++++++++++++                   =√   ≈×                  -++++++++++++++÷                 
-         ++++++++++++++++=                 ≠×≈×+                √+++++++++++++++++√                 
-         ++++++++++++++++++++≠                               √++++++++++++++++++++                  
-         +++++++++++++++++++++++++÷π                     ≠++++++++++++++++++++++++                  
-         ++++++++++++++++++++++++++++++++++++×≠≠≠≠×++++++++++++++++++++++++++++++÷                  
-         =++++++++++++++++++++++++++++++++++π   √++++++++++++++++++++++++++++++++π                  
-         π++++++++++++++++++++++++++++++++++    √++++++++++++++++++++++++++++++++                   
-          +++++++++++++++++++++++++++++++π +    ∞+  √×++++++++++++++++++++++++++≠                   
-          -+++++++++++++++++++++++++++++   ++++++√  ≈÷÷+++++++++++++++++++++++++                    
-           ++++++++++++++++++++++++++++-∞- √-  ××≈×-++∞ ≠++++++++++++++++++++++≈                    
-           =++++++++++++++-++++++++++π√√--ππ-÷-+÷++-  √ π++++++++++++++++++++++                     
-            +++++++ ++++++√++++++++++≈+    π=++≠     √+÷≈+++++++++++++++++++++                      
-             ++++++ √+++++≠ ++++++++=≈+     ≈ -       +√π++++++++++++++++++++                       
-              +++++  ≠+++++  +++++++π=+     ∞+≈       +π ++++++-≈+++++++++++                        
-               ++++π  ≈++++   ++++++ ××     ≠≠∞       +√ +++++- ++++π++++++                         
-                ÷++π   √+++÷   ×+++∞ +≈     ×√≈       +∞ ∞+++=  +++π +++++                          
-                  ∞      -++    √++  +      =π≠       +∞  ++√  ≠++  ∞+++√                           
-                                 ×× ∞+                +∞  ×=   ==   ×+×                                                       </div>
-    </div>
-
-
-    <div
-      style="
-        grid-column: span 3 / span 3;
-        grid-row: span 2 / span 2;
-        grid-row-start: 2;
-        max-width: 100%;
-      "
-      class="base-container backdrop top-outset blue-outline margin-l"
-    >
-      <h2>Projets</h2>
-
-      
-    </div>
-
-<!-- <div class="base-container top-outset blue-outline margin-l" id="content-titleName">
-  <h1>Victor VAUTRIN</h1>
-  <p>Développeur Informatique, Étudiant @ EPITECH Lyon</p>
-</div> -->
-
-
-<!--==================================================================================================-->
-  </div>
-  </div>
-
 </body>
 </html>

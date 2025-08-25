@@ -1,0 +1,28 @@
+#internal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* behind everything else */
+    user-select: none;
+    overflow: hidden;
+    line-height: 1.2;
+    font-family: monospace;
+    margin: 0;
+    background-color: rgb(33, 33, 33);
+    color: rgb(47, 47, 47);
+}
+
+/* Your spans */
+.background-span-line {
+    font-family: monospace;
+    white-space: pre;
+    display: block;
+    width: 100%;
+    font-size: var(--font-size, 16px);
+    line-height: 1.2;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}

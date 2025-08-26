@@ -30,6 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 
@@ -197,6 +198,7 @@ HEADER/WELCOME SECTION
     background-position: 0 0, 8px 8px;
     background-size: 16px 16px;
     
+    width: 20%;
     max-width: 20%;
 
     border: solid #171717 8px;
@@ -260,6 +262,7 @@ button {
 
 @media only screen and (max-width: 600px) {
     .project-card {
+        width: 80%;
         max-width: 80%;
         height: 256px;
     }

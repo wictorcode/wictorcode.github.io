@@ -49,7 +49,8 @@ const container = document.getElementById("competenceContainer");
 
 function loadSkills(type) {
     const skills = skillMap[type];
-    container.innerHTML = "";
+    container.innerHTML = ""; // clear previous
+
     skills.forEach(skill => {
         const wrapper = document.createElement("div");
         wrapper.className = "skill-icon";
@@ -65,8 +66,14 @@ function loadSkills(type) {
         wrapper.appendChild(img);
         wrapper.appendChild(tooltip);
         container.appendChild(wrapper);
+
+        // trigger fade after insertion
+        requestAnimationFrame(() => {
+            wrapper.classList.add("show");
+        });
     });
 }
+
 
 // load default
 loadSkills("languages");

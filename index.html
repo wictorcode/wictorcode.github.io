@@ -1,170 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor VAUTRIN</title>
-    <script src="source/main.js" type="module" defer></script>
-    <link rel="stylesheet" href="style/main.css">
-</head>
-<body>
-    <!-- Ne pas toucher, c'est le background binaire -->
-    <pre id="internal-background" class="bg-theme-dark">
-    </pre> 
 
-    <div id="page-content">
-        <center>
-            <div class="hero">
-                <h1><a href="https://www.linkedin.com/in/victor-vautrin-b757b0222/">Victor Vautrin</a></h1>
-                <h2>Étudiant & Développeur Informatique</h2>
-            </div>
-        </center>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-assets>
+        <img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.png" />
+        <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
+      </a-assets>
 
-        <section class="genericContainer">
-            <h3 class="sectionTitle">C:\À Propos</h3>
-            <p>Je me nomme Victor Vautrin. Je suis un développeur passioné, spécialisé dans la réalisation d'applications.</p>
-            <p>Je vous invite à me découvrir à travers ce site.</p>
-        </section>
-
-        <section class="genericContainer">
-            <h3 class="sectionTitle">D:\Compétences</h3>
-            <div style="
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-            ">
-
-                <nav class="ongletZone" style="margin-bottom: 1em; display: flex; justify-content: center; flex-wrap: wrap;">
-                    <button style="margin: 5px;" data-type="languages">Langages</button>
-                    <button style="margin: 5px;" data-type="frameworks">Frameworks & Librairies</button>
-                    <button style="margin: 5px;" data-type="databases">Base de données</button>
-                    <button style="margin: 5px;" data-type="tools">Logiciels</button>
-                </nav>
-
-                <div id="competencesContent">
-                    <div id="competenceContainer" class="skills-container"></div>
-                </div>
-            </div>
-            
-        </section>
-
-        <section class="genericContainer">
-            <h3 class="sectionTitle">E:\Projets et Expériences</h3>
-
-            <div class="experienceItem">
-                <div class="experienceTitle">Stage Développeur CRM @ <a href="https://www.divy-si.fr/">Divy</a></div>
-                <div class="experienceDate">Juin 2025 - Septembre 2025</div>
-                <p>Conception et développement de solutions CRM adaptées aux besoins des clients, selon la méthodologie agile, en utilisant les outils de Divalto.</p>
-                <p>Forte utilisation de SQL sous plusieurs SGBD/Syntaxes</p>
-                <p>Créations de pages web et fonctionnalités</p>
-            </div>
-
-            <div class="experienceItem">
-                <div class="experienceTitle">Projet Universitaire - ERP</div>
-                <div class="experienceDate">Septembre 2024 - Juin 2025</div>
-                <p>Au premier semestre de 3ème année de BUT, notre groupe de 20 étudiants a dû s'organiser, concevoir et développer un ERP à partir d'un cahier des charges fourni par les enseignants.</p>
-                <p>Technologies utilisées : Angular, NestJS, MySQL, Tailwind.</p>
-                <p>Au second semestre, nous avons échangé notre ERP avec celui d’un autre groupe. Nous devions le reprendre, l’adapter en fonction des retours, et nous approprier une nouvelle base de code.</p>
-                <p>Technologies utilisées : Angular, PrimeNG, Java Spring Boot.</p>
-            </div>
-
-            <div class="experienceItem">
-                <div class="experienceTitle">Projet Universitaire - Application d'aide à la décision</div>
-                <div class="experienceDate">2023</div>
-                <p>Projet de 2nd semestre de première année.</p>
-                <p>Création d'une application desktop avec interface graphique grâce à Java Swing</p>
-                <p>Lecture de fichier, analyse et parcours de graphes</p>
-                <p>Affichage graphique et intéractif en temps réel de parcours.</p>
-            </div>
-        </section>
-
-
-        <section class="genericContainer">
-            <h3 class="sectionTitle">F:\ormations</h3>
-
-            <div class="experienceItem">
-                <div class="experienceTitle">Epitech, Lyon</div>
-                <div class="experienceDate">2025-2027</div>
-                <p>À venir...</p>
-            </div>
-
-            <div class="experienceItem">
-                <div class="experienceTitle">IUT Lyon 1, Villeurbanne</div>
-                <div class="experienceDate">2022-2025</div>
-                <p>BUT Informatique, avec une spécialisation en réalisation d'applications</p>
-                <p>Mélange de cours théoriques et de cours pratiques</p>
-                <p>Web, logiciel, bas-niveau (C & Assembleur ARM), base de données, réseau, multimédia, qualité de code, communication, etc...</p>
-            </div>
-
-            <div class="experienceItem">
-                <div class="experienceTitle">Lycée Lama-Prévot, Rémire-Montjoly <i>(Guyane Française)</i></div>
-                <div class="experienceDate">2020-2022</div>
-                <p>BAC Général mention Très Bien</p>
-                <p>Spécialités: Sciences Informatique, Cinéma-Audiovisuel, Littérature Anglaise</p>
-                <p>Apprentissage de l'algorithmique avec python, fondamenteux de l'informatique, SQL, etc...</p>
-            </div>
-
-        </section>
-
-        <section class="genericContainer" id="butComp">
-            <h3 class="sectionTitle">Z:\Compétences Universitaires</h3>
-            <strong>Alignement des compétences du BUT Informatique avec le stage</strong>
-            
-            <div class="skillItem">
-                <h4>C1. Réaliser un développement d’application</h4>
-                <ul>
-                    <li>- Écriture et documentation du code</li>
-                    <li>- Améliorer selon les retours clients </li>
-                    <li>- Développement de fonctionnalités pour le CRM des clients</li>
-                </ul>
-            </div>
-            
-            <div class="skillItem">
-                <h4>C2. Optimiser des applications informatiques</h4>
-                <ul>
-                    <li>- Amélioration de l'UX selon les besoins clients</li>
-                    <li>- Optimisation de code pour une éxécution rapide</li>
-                    <li>- Tests rigoureux avant livraison client</li>
-                </ul>
-            </div>
-            
-            <div class="skillItem">
-                <h4>C3. Administrer des systèmes et des réseaux</h4>
-                <ul>
-                    <li>- Mises en production autonomes et régulières</li>
-                    <li>- Paramétrage d'API</li>
-                    <li>- Paramétrage d'automates communiquant avec des logiciels ERP externes</li>
-                </ul>
-            </div>
-            
-            <div class="skillItem">
-                <h4>C4. Gérer des données de l’information</h4>
-                <ul>
-                    <li>- Manipulation de données personnelles et stratégiques</li>
-                    <li>- Intégration d'API</li>
-                    <li>- Écriture de code SQL pour des SGBD différentes</li>
-                </ul>
-            </div>
-            
-            <div class="skillItem">
-                <h4>C5. Conduire un projet</h4>
-                <ul>
-                    <li>- Cycle de développement selon la méthode Agile</li>
-                    <li>- Réunions et mises au point régulières (interne & clients)</li>
-                    <li>- Utilisation d'outils de suivi et d'avancée (Trello)</li>
-                </ul>
-            </div>
-            
-            <div class="skillItem">
-                <h4>C6. Collaborer au sein d’une équipe informatique</h4>
-                <ul>
-                    <li>- Travail en pôle avec chef de projet, consultants et support</li>
-                    <li>- Gestion de tickets, communication client et réactivité support</li>
-                    <li>- Partage de connaissances et entraide entre développeurs</li>
-                </ul>
-            </div>
-        </section>
-    </div>
-</body>
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#avatarModel" animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+      </a-entity>
+    </a-scene>
+  </body>
 </html>
